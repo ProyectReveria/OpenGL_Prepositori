@@ -17,8 +17,9 @@ u_mouse // El raton o mejor dicho el "mouse" y su posicion
 
 gl_FragCoord //Cordenadas en pantalla  (recibe coordenadas), permite partir la pantalla (es solo lectura para la GPU)
 gl_FragColor //colores en una pantalla (recibe vector 4 (R,G,B,intensidad))
+smoothstep
+step() //corta de golpe una parte de la pantalla para que se renderice distinto
 
-//Version para copiar: 
 //#import OpenGL_Lenguaje_Data; 
 //Declaraciones 
 //#ifdef 
@@ -37,3 +38,5 @@ gl_FragColor //colores en una pantalla (recibe vector 4 (R,G,B,intensidad))
 
 //gl_FragCoord //Cordenadas en pantalla  (recibe coordenadas), permite partir la pantalla (es solo lectura para la GPU)
 //gl_FragColor //colores en una pantalla (recibe vector 4 (R,G,B,intensidad))
+//smoothstep 
+//step() //corta de golpe una parte de la pantalla para que se renderice distinto
