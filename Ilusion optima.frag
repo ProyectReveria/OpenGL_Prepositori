@@ -36,6 +36,7 @@ void main(){
 
     //Time Partitions
     vec2 Coor_Partisan= gl_FragCoord.xy / u_resolution; 
+    vec2 Coor_Partisan2 = gl_FragColor.xy / u_mouse.xy; 
     vec2 TimePartisan = Coor_Partisan.xy / u_time;
     float Time_Diferencial = sin(u_time); 
 
@@ -52,7 +53,7 @@ void main(){
     float pct = abs(sin(u_time));
     float pct_seno = sin(pct / sin(TimePartisan.x)); 
 
-    color = mix(colorA,sin(colorB * u_time),pct_seno);
+    color = mix(tan(colorA * Coor_Partisan2.x),sin(colorB),pct_seno);
 
         gl_FragColor = vec4(color,1.0);
     
