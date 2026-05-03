@@ -1,0 +1,3 @@
+int newFunction(in vec4 aVec4,   // read-only
+                out vec3 aVec3,    // write-only
+                inout int aInt);   // read-write
